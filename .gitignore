@@ -9,7 +9,7 @@ out/
 
 # Local MySQL driver for run.bat (download separately)
 lib/
-/sql
+sql/
 # Logs and OS files
 *.log
 Thumbs.db
