@@ -9,7 +9,7 @@ out/
 
 # Local MySQL driver for run.bat (download separately)
 lib/
-sql/
+
 # Logs and OS files
 *.log
 Thumbs.db
@@ -17,3 +17,6 @@ Thumbs.db
 
 # Local secrets / overrides
 .env
+
+# SQL scripts kept local only
+sql/
