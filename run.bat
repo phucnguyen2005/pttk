@@ -10,7 +10,7 @@ if not exist "%APP%\WEB-INF\classes" mkdir "%APP%\WEB-INF\classes"
 if not exist "%APP%\WEB-INF\lib" mkdir "%APP%\WEB-INF\lib"
 if exist lib\*.jar copy /Y lib\*.jar "%APP%\WEB-INF\lib" >nul
 if not exist "%APP%\WEB-INF\lib\mysql-connector-j*.jar" (echo Thieu mysql-connector-j jar: dat vao thu muc lib\ roi chay lai & pause & exit /b 1)
-dir /b /s src\main\java\garage\*.java > "%TEMP%\garage_src.txt"
+dir /b /s src\main\java\*.java > "%TEMP%\garage_src.txt"
 javac -encoding UTF-8 --release 11 -d "%APP%\WEB-INF\classes" @"%TEMP%\garage_src.txt"
 if errorlevel 1 (echo Loi bien dich & pause & exit /b 1)
 
